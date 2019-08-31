@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.565 s <<< FAILURE! - in TestSuite
-feature(org.snappet.runner.TestRunner)  Time elapsed: 27.361 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 106.636 s <<< FAILURE! - in TestSuite
+feature(org.snappet.runner.TestRunner)  Time elapsed: 104.874 s  <<< FAILURE!
 cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
 Caused by: java.lang.AssertionError: expected [true] but found [false]
 

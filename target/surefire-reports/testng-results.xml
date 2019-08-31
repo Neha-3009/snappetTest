@@ -2,19 +2,19 @@
 <testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-31T20:06:49Z" name="Testng Cucumber Suite" finished-at="2019-08-31T20:07:17Z" duration-ms="27940">
+  <suite started-at="2019-08-31T21:49:25Z" name="Testng Cucumber Suite" finished-at="2019-08-31T21:51:11Z" duration-ms="105632">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.snappet.runner.TestRunner@752325ad]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2019-08-31T20:06:49Z" name="Run All Tests" finished-at="2019-08-31T20:07:17Z" duration-ms="27940">
+    <test started-at="2019-08-31T21:49:25Z" name="Run All Tests" finished-at="2019-08-31T21:51:11Z" duration-ms="105632">
       <class name="org.snappet.runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.snappet.runner.TestRunner@752325ad]" started-at="2019-08-31T22:06:49Z" name="setUpClass" finished-at="2019-08-31T22:06:49Z" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.snappet.runner.TestRunner@752325ad]" started-at="2019-08-31T23:49:25Z" name="setUpClass" finished-at="2019-08-31T23:49:26Z" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.snappet.runner.TestRunner@752325ad]" started-at="2019-08-31T22:06:49Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-31T22:07:17Z" duration-ms="27357" status="FAIL">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.snappet.runner.TestRunner@752325ad]" started-at="2019-08-31T23:49:26Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-31T23:51:11Z" duration-ms="104794" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -55,15 +55,15 @@ Caused by: java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at org.snappet.stepdefinition.EditStepDefination.the_subject_should_be_removed_from_home_page(EditStepDefination.java:71)
-	at ✽.Then the subject should be removed from home page(teachersDashboard.feature:30)
+	at org.snappet.stepdefinition.LoginStepDefinition.the_application_Login_page_is_open(LoginStepDefinition.java:23)
+	at ✽.Given The application Login page is open(teachersDashboard.feature:5)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.snappet.runner.TestRunner@752325ad]" started-at="2019-08-31T22:07:17Z" name="tearDownClass" finished-at="2019-08-31T22:07:17Z" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.snappet.runner.TestRunner@752325ad]" started-at="2019-08-31T23:51:11Z" name="tearDownClass" finished-at="2019-08-31T23:51:11Z" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

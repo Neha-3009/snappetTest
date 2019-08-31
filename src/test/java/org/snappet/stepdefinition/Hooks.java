@@ -2,11 +2,11 @@ package org.snappet.stepdefinition;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -38,6 +38,7 @@ public class Hooks extends BasePage {
 					+ new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + ".png";
 			String snapshotPath = System.getProperty("user.dir") + "//screenshots//" + imageName;
 			FileUtils.copyFile(imageFile, new File(snapshotPath));
+			result.embed(Files.readAllBytes(imageFile.toPath()), "image/png");
 		}
 
 	}

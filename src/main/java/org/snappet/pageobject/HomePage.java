@@ -12,7 +12,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.snappet.stepdefinition.EditStepDefination;
 
 public class HomePage {
 	
@@ -127,10 +126,17 @@ public class HomePage {
 	}
 
 	public void saveSubject() {
-		WebElement save = driver.findElement(saveButton);
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.elementToBeClickable(save));
-		save.click();
+		try {
+			Thread.sleep(1000);
+			WebElement save = driver.findElement(saveButton);
+			WebDriverWait wait = new WebDriverWait(driver, 20);
+			wait.until(ExpectedConditions.elementToBeClickable(save));
+			save.click();
+		} catch (Exception e) {
+			logger.info("Error at saving subject",e);
+			
+		}
+		
 	}
 
 	public boolean validateSavedSubject() {
