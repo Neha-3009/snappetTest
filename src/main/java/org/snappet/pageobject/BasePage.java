@@ -28,11 +28,9 @@ public class BasePage {
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		}
 		if (System.getProperty("os.name").startsWith("Windows")) {
-			String firefoxDriverPath = System.getProperty("user.dir")
-					+ "//src//test//resources//drivers//windows//geckodriver.exe";
+			String firefoxDriverPath = "src/test/resources/drivers/windows/geckodriver.exe";
 			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
-			String chromeDriverPath = System.getProperty("user.dir")
-					+ "//src//test//resources//drivers//windows//chromedriver.exe";
+			String chromeDriverPath = "src/test/resources/drivers/windows/chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		}
 	}

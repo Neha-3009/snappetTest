@@ -36,7 +36,7 @@ public class Hooks extends BasePage {
 			File imageFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			String imageName = result.getName()
 					+ new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + ".png";
-			String snapshotPath = System.getProperty("user.dir") + "//screenshots//" + imageName;
+			String snapshotPath = System.getProperty("user.dir") + "screenshots/" + imageName;
 			FileUtils.copyFile(imageFile, new File(snapshotPath));
 			result.embed(Files.readAllBytes(imageFile.toPath()), "image/png");
 		}

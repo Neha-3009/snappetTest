@@ -20,7 +20,7 @@ public class LoginStepDefinition extends BasePage {
 	public void the_application_Login_page_is_open() throws Throwable {
 		
 		loginPage = new LoginPage(driver);
-		Assert.assertTrue(!loginPage.getLogo().isDisplayed());
+		Assert.assertTrue(loginPage.getLogo().isDisplayed());
 		
 		Log.info("Login Page Successfully Loaded");
 
