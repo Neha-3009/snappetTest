@@ -1,0 +1,4 @@
+org\snappet\configreader\ConfigReader.class
+org\snappet\pageobject\BasePage.class
+org\snappet\pageobject\LoginPage.class
+org\snappet\pageobject\HomePage.class

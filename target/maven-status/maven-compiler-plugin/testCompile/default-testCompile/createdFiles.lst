@@ -1,0 +1,5 @@
+org\snappet\stepdefinition\EditStepDefination.class
+org\snappet\stepdefinition\LoginStepDefinition.class
+org\snappet\runner\TestRunner.class
+org\snappet\stepdefinition\ActivateSubjectDefinition.class
+org\snappet\stepdefinition\Hooks.class
