@@ -29,13 +29,16 @@ Directly run from command prompt or bash :
 1) Open command propmt or bash 
 2) Run the command "mvn clean test verify" 
 
-#features of project
+#Features of project
+
 Cucumber TestNG Selenium - Overall testframework leveraging the Cucumber framework alongwith testNG and Selenium written in JAVA.
 
 teachersDasboard.feature File - The feature file specifies the steps in BDD language style
 
 LoginStepDefinition- Java class whereby the login steps from the feature file are broken down to be coded into automation tests
+
 ActivateSubjectDefinition- Java class whereby the activation of subject's steps from the feature file are broken down to be coded into automation tests
+
 EditStepDefinition- Java class whereby the editing of a subject's steps from the feature file are broken down to be coded into automation tests
 
 TestRunner class- Java class which provides an integration between features file and step definition classes. Also specifies the plugins for test report generation.
@@ -44,7 +47,7 @@ Hooks class - Ensures that @before and @after methods run before specified scena
 @Before method contains functionality of setting up environment, initializing driver and deleting cookies etc.
 @After method takes screenshot in case of failures and embed them in the test report generated.
 
-BasePage class - gets the operating system and sets driver accordingly. Also contains few basic functionalities which can be used across projects.
+BasePage class - Gets the operating system and sets driver accordingly. Also contains few basic functionalities which can be used across projects.
 
 HomePage and LoginPage - Java class which defines the functionality related to website's login features as well as activation, editing and removal of subject features.
 
