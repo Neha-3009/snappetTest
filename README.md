@@ -16,15 +16,18 @@ JAVA_HOME = PAth to java sdk
 M2_HOME = Path to maven installation
 MAVEN_HOME = Path to maven installation
 
-# Run the program as mentioned below -
+# Steps to run the test script-
 1. Right click on pom.xml
 2. Select the option run as -> run configurations..
 3. Inside new window ->in the filter panel-> select project name as - snappet under "Maven Build" 
-4. In  goals mention as -clean test verify and run
+4. In  goals mention as -clean test verify 
+5 Click on Run
 
-or else - 
- run command from cmd as - 
-mvn clean test verify 
+Or  
+
+Directly run from command prompt or bash :
+1) Open command propmt or bash 
+2) Run the command "mvn clean test verify" 
 
 #features of project
 Cucumber TestNG Selenium - Overall testframework leveraging the Cucumber framework alongwith testNG and Selenium written in JAVA.
