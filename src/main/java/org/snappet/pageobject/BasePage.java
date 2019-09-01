@@ -42,13 +42,6 @@ public class BasePage {
 		if (browserType.equals("firefox")) {
 			driver = new FirefoxDriver();
 		} else if (browserType.equals("chrome")) {
-			/*
-			 * ChromeOptions options = new ChromeOptions();
-			 * options.addArguments("--headless"); options.addArguments("--disable-gpu");
-			 * options.addArguments("--no-sandbox");
-			 * options.addArguments("--disable-dev-shm-usage");
-			 * options.setExperimentalOption("useAutomationExtension", false);
-			 */
 			driver = new ChromeDriver();
 		}
 		return driver;
